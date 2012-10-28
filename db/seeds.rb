@@ -8,38 +8,39 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create(title: 'CoffeeScript',
+Product.create(title: 'Daisy Ring',
   description: 
     %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
+        Schlumberger imaginative interpretation of the familiar flower 
+        features rare Fancy Vivid Pink diamonds. Ring in platinum and 18k
+        rose gold with pink and white diamonds. Round Fancy Vivid Pink 
+        diamonds, carat total weight .15; round brilliant white diamonds,
+        carat total weight .64.
       </p>},
-  image_url:   'cs.jpg',    
-  price: 36.00)
+  image_url:   'daisy_ring.png',    
+  price: 36000.00)
 # . . .
-Product.create(title: 'Programming Ruby 1.9',
+Product.create(title: 'Black Magic Ring',
   description:
     %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
+        A lovely diamond ring with black diamonds.
       </p>},
-  image_url: 'ruby.jpg',
-  price: 49.95)
+  image_url: 'black_diamonds.jpg',
+  price: 19000)
 # . . .
 
-Product.create(title: 'Rails Test Prescriptions',
+Product.create(title: 'Heart Ring',
   description: 
     %{<p>
-        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
-        Rails applications, covering Test-Driven Development from both a
-        theoretical perspective (why to test) and from a practical perspective
-        (how to test effectively). It covers the core Rails testing tools and
-        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
-        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
+        Ring in 18k rose gold with round brilliant diamonds. Carat total weight .19.
       </p>},
-  image_url: 'rtp.jpg',
-  price: 34.95)
+  image_url: 'heart_ring.png',
+  price: 1500.00)
+
+Product.create(title: 'Key Pendant',
+  description: 
+    %{<p>
+        <em>Rose cut diamond key pendant </em> from the Victorian era. This lovely pieceis makd of 14kt gold which is topped with sterling silver and is lined with sparkling old Rose Cut diamonds. This pendant is in the shape of a lovely and ornate skeletion-like key with diamonds set within its surface. The handle of the key depicts a gorteours crown of diamonds and a yellow gold bail rests at its top, perfet for haning from a chain.
+      </p>},
+  image_url: 'key.jpg',
+  price: 1700.00)
