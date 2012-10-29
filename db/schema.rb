@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121028231359) do
+ActiveRecord::Schema.define(:version => 20121029224220) do
 
   create_table "carts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -43,6 +43,16 @@ ActiveRecord::Schema.define(:version => 20121028231359) do
     t.decimal  "price",       :precision => 8, :scale => 2
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
+  end
+
+  create_table "searches", :force => true do |t|
+    t.string   "keywords"
+    t.float    "minimum_price"
+    t.float    "maximum_price"
+    t.string   "new"
+    t.string   "show"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "users", :force => true do |t|

@@ -7,6 +7,8 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
+  resources :searches
+
   resources :questions
 
     get 'admin' => 'admin#index'
