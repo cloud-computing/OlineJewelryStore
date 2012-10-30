@@ -1,6 +1,6 @@
-<h1>Search Jewelry</h1>
+<h1>All Jewelry</h1>
 
-<%= form_tag search_path, :method => 'get' do %>
+<%= form_tag all_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
@@ -19,8 +19,8 @@
         <tr>
             <td><%= product.title%></td>
             <td class = "price"><%= number_to_currency(product.price) %></td>
-            <td><%= image_tag(product.image_url, :size => "100x40")  %></td>
-            <td><%= product.description %></td>
+            <td><%= image_tag(product.image_url, :size => "100x60")  %></td>
+            <td><%= sanitize(product.description) %></td>
         <% end %>
     </table>
     

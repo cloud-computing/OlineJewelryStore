@@ -4,7 +4,7 @@ class SearchController < ApplicationController
   def index
       #@products = Product.paginate page: params[:page], order: sort_column+ " " + sort_direction,
       #per_page: 3
-      @products = Product.search(params[:search]).order(sort_column+ " " + sort_direction).paginate(:per_page => 3, :page => params[:page])
+      @products = Product.search(params[:search]).order(sort_column+ " " + sort_direction).paginate(:per_page => 4, :page => params[:page])
   end
 
   def sort_column

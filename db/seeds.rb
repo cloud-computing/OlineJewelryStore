@@ -44,3 +44,11 @@ Product.create(title: 'Key Pendant',
       </p>},
   image_url: 'key.jpg',
   price: 1700.00)
+  
+Product.create(title: 'Diamond Earrings',
+  description: 
+    %{<p>
+        <em>Rose cut diamond Earrings </em> from the Victorian era.  
+      </p>},
+  image_url: 'earring1.jpg',
+  price: 600000.00)

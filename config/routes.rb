@@ -29,7 +29,7 @@ Depot::Application.routes.draw do
     get "store/index"
     match '/store/index', to: "store#index"
 
-    match '/search', to: 'search#index'
+    match '/all', to: 'search#index'
     match '/home', to: 'store#home'
     match '/contact', to: 'store#contact'
 
